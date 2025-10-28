@@ -38,10 +38,6 @@
 **Next Week Goals:**
 - Finalise basic dataset used
 - Implement CI pipeline
-
-**Next Week Goals:**
-- Research datasets to use
-- Setup CI pipeline
 - Setup Cmake and tests in repo
 
 ## Week 5 and 6: Tech stack finalisation
@@ -49,9 +45,13 @@
 **Dates:** 24 Oct – 7 Nov
 **Activities:**
 - Decided to use Iris dataset for initial testing and implementation
+- Decided to add catch2 for testing since ctest only tests outputs of exe files
 
 **Challenges**
-- May be issues with non numeric values in dataset (species)
+- May be issues with non numeric values in dataset (species in iris.csv)
 
 **Resolution**
 - Using python to clean dataset (will also be helpful for future use of real world dataset)
+
+**Next Week Goals:**
+- Make abstract class for implemented models 

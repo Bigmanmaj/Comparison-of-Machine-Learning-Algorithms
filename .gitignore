@@ -54,4 +54,12 @@ CMakeUserPresets.json
 # External projects
 *-prefix/
 
+# CMake and CTest generated files
+build/
+CMakeFiles/
+CMakeCache.txt
+CTestTestfile.cmake
+DartConfiguration.tcl
+cmake_install.cmake
+
 # End of https://www.toptal.com/developers/gitignore/api/cmake,c++
