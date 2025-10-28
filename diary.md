@@ -3,7 +3,6 @@
 **Supervisor:** [Michail Fasolakis]
 **Degree:** BSc Computer Science
 **Start Date:** [29 September 2025]
-**Last Updated:** [14/10/2025]
 
 ## Week 1 and 2: Project Planning and setup
 **Dates:** 29 Sept – 10 Oct
@@ -37,7 +36,22 @@
 - Resolved it by learning to use FetchContent in CMake to properly link Catch2 and enable test discovery with include(Catch) and catch_discover_tests().
 
 **Next Week Goals:**
+- Finalise basic dataset used
+- Implement CI pipeline
+
+**Next Week Goals:**
 - Research datasets to use
 - Setup CI pipeline
 - Setup Cmake and tests in repo
 
+## Week 5 and 6: Tech stack finalisation
+[Entry in Progress]
+**Dates:** 24 Oct – 7 Nov
+**Activities:**
+- Decided to use Iris dataset for initial testing and implementation
+
+**Challenges**
+- May be issues with non numeric values in dataset (species)
+
+**Resolution**
+- Using python to clean dataset (will also be helpful for future use of real world dataset)
