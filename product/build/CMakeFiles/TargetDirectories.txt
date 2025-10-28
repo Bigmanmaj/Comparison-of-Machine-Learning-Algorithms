@@ -1,3 +1,0 @@
-/home/maciej-roszkowski/Documents/uni/FYP/PROJECT/product/build/CMakeFiles/main.dir
-/home/maciej-roszkowski/Documents/uni/FYP/PROJECT/product/build/CMakeFiles/edit_cache.dir
-/home/maciej-roszkowski/Documents/uni/FYP/PROJECT/product/build/CMakeFiles/rebuild_cache.dir
