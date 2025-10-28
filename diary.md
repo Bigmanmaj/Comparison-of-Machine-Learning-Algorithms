@@ -22,3 +22,22 @@
 - Finalise tech stack
 - Finish setting up gitlab repository
 - Start research into basic algorithms and datasets
+
+## Week 3 and 4: Tech stack finalisation
+**Dates:** 10 Oct – 24 Oct
+**Activities:**
+- Initialised repository
+- Decided to implement algorithms using C++
+- Using Cmake for build magement, Catch2 for testing
+
+**Challenges**
+- Faced issues configuring Catch2 with CMake — tests weren’t being detected or run properly.
+
+**Resolution**
+- Resolved it by learning to use FetchContent in CMake to properly link Catch2 and enable test discovery with include(Catch) and catch_discover_tests().
+
+**Next Week Goals:**
+- Research datasets to use
+- Setup CI pipeline
+- Setup Cmake and tests in repo
+
