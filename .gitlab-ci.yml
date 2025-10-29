@@ -5,11 +5,11 @@ before_script:
 
 build:
   script:
-    - cmake -B build
+    - cmake -S product -B build
     - cmake --build build
 
 test:
   script:
-    - cmake -B build
+    - cmake -S product -B build
     - cmake --build build
     - ctest --test-dir build --output-on-failure
