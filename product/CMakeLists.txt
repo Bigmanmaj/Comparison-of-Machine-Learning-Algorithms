@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Enable testing
 enable_testing()
-include(CTest)
 
 Include(FetchContent)
 
@@ -18,8 +17,20 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(tests product_tests/test_main.cpp)
-add_executable(main src/main.cpp)
-target_include_directories(main PRIVATE headers)
-target_include_directories(tests PRIVATE headers)
-target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
+# Create a library with your logic (no main function)
+add_library(myproject_lib src/main.cpp)
+target_include_directories(myproject_lib PUBLIC headers)
+
+# Main application - just calls the library
+add_executable(main.app src/main_runner.cpp)
+target_link_libraries(main.app PRIVATE myproject_lib)
+
+# Test executable - links against the library
+add_executable(tests.app product_tests/test_main.cpp)
+target_link_libraries(tests.app PRIVATE myproject_lib Catch2::Catch2WithMain)
+
+
+include(CTest)
+list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/extras)
+include(Catch)
+catch_discover_tests(tests.app)

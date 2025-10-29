@@ -3,5 +3,4 @@
 
 TEST_CASE("test1") {
     REQUIRE(main_program() == 0);
-    REQUIRE(true);
 }
