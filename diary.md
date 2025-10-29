@@ -5,7 +5,7 @@
 **Start Date:** [29 September 2025]
 
 ## Week 1 and 2: Project Planning and setup
-**Dates:** 29 Sept – 10 Oct
+**Dates:** 29 Sept - 10 Oct
 **Activities:**
 - Completed project plan including abstract timeline and risks and mitigations section.
 - Began background reading — Mitchell (1997), Hastie et al. (2009).
@@ -23,14 +23,14 @@
 - Start research into basic algorithms and datasets
 
 ## Week 3 and 4: Tech stack finalisation
-**Dates:** 10 Oct – 24 Oct
+**Dates:** 10 Oct - 24 Oct
 **Activities:**
 - Initialised repository
 - Decided to implement algorithms using C++
 - Using Cmake for build magement, Catch2 for testing
 
 **Challenges**
-- Faced issues configuring Catch2 with CMake — tests weren’t being detected or run properly.
+- Faced issues configuring Catch2 with CMake - tests weren’t being detected or run properly.
 
 **Resolution**
 - Resolved it by learning to use FetchContent in CMake to properly link Catch2 and enable test discovery with include(Catch) and catch_discover_tests().
@@ -42,10 +42,11 @@
 
 ## Week 5 and 6: Tech stack finalisation
 [Entry in Progress]
-**Dates:** 24 Oct – 7 Nov
+**Dates:** 24 Oct - 7 Nov
 **Activities:**
 - Decided to use Iris dataset for initial testing and implementation
 - Decided to add catch2 for testing since ctest only tests outputs of exe files
+- Setup CI into project
 
 **Challenges**
 - May be issues with non numeric values in dataset (species in iris.csv)

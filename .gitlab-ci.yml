@@ -1,0 +1,15 @@
+image: gcc:latest
+
+before_script:
+  - apt-get update && apt-get install -y cmake
+
+build:
+  script:
+    - cmake -S product -B build
+    - cmake --build build
+
+test:
+  script:
+    - cmake -S product -B build
+    - cmake --build build
+    - ctest --test-dir build --output-on-failure
